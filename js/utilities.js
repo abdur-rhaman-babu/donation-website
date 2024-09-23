@@ -16,3 +16,10 @@ function getTotalBalanceById (id){
     return getTotalBalance;
 }
 
+// show section
+function getSectionById(id){
+    document.getElementById('donate-history').classList.add('hidden')
+    document.getElementById('donate-section').classList.add('hidden')
+    document.getElementById(id).classList.remove('hidden')
+}
+
