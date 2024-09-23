@@ -14,9 +14,7 @@ document.getElementById('donation-btn').addEventListener('click', function(){
 
 // faq section
 document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href = 'donation-website/faq.html';
+    window.location.href = '/faq.html';
 })
-
-
 
 
