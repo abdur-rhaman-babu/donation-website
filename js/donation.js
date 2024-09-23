@@ -16,6 +16,9 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
         alert('donate successfully added')
         document.getElementById('noakhali-donate-text').innerText = newBalnce;
         document.getElementById('total-balance').innerText = totalBalance - currentValue;
+
+        donationHistory(currentValue, "Tk. Donate for Flood at Noakhali, Bangladesh")
+        
     }else{
         alert('Something is worng went, please try agin')
     }

@@ -16,6 +16,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(e)
         alert('donate successfully added')
         document.getElementById('feni-donate-text').innerText = newBalnce;
         document.getElementById('total-balance').innerText = totalBalance - currentValue;
+
+        donationHistory(currentValue, "Tk. Donate for Flood Relief in Feni,Bangladesh")
     }else{
         alert('Something is worng went, please try agin')
     }

@@ -16,6 +16,8 @@ document.getElementById('quata-donate-btn').addEventListener('click', function(e
         alert('donate successfully added')
         document.getElementById('quata-donate-text').innerText = newBalnce;
         document.getElementById('total-balance').innerText = totalBalance - currentValue;
+
+        donationHistory(currentValue, "Tk. Aid for Injured in the Quota Movement")
     }else{
         alert('Something is worng went, please try agin')
     }
