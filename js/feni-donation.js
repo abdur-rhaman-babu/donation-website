@@ -13,7 +13,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(e)
     const newBalnce = balance + currentValue;
     
     if ( (currentValue > 0 && currentValue <= totalBalance) && !isNaN(currentValue)){
-        alert('donate successfully added')
+        document.getElementById('my_modal_1').showModal()
+        
         document.getElementById('feni-donate-text').innerText = newBalnce;
         document.getElementById('total-balance').innerText = totalBalance - currentValue;
 

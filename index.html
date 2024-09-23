@@ -21,11 +21,6 @@
         <button id="blog-btn" class="bg-[#B4F461] md:px-8 md:py-3 rounded-lg px-4 py-2">
             <a class="font-bold text-sm" href="#">Blog</a>
         </button>
-
-        <button id="home-btn" class="bg-[#B4F461] hidden md:px-8 md:py-3 rounded-lg px-4 py-2">
-            <a class="font-bold text-sm" href="#">Home</a>
-        </button>
-
         <div class="flex items-center gap-3">
             <img src="/image/logo.png" alt="">
             <p class="font-bold">Donate Bangladesh</p>
@@ -113,43 +108,6 @@
 
                
         </section>
-
-        <section id="faq-section" class="md:max-w-6xl mx-auto mb-10 hidden">
-            <div class="space-y-5">
-                <h1 class="tex-center font-bold text-5xl my-12">Frequently Asked Questions(FAQ)❔</h1>
-            <div class="collapse collapse-plus bg-base-200">
-                <input type="radio" name="my-accordion-3" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is document object model(DOM)?</div>
-                <div class="collapse-content">
-                  <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each part of the document (such as elements, attributes, and text content) is modeled as an object. </p>
-                </div>
-              </div>
-              <div class="collapse collapse-plus bg-base-200">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-                <div class="collapse-content">
-                  <p>
-                    To select an element from the Document Object Model (DOM), you can use several methods provided by the DOM API. These methods allow you to target elements by various criteria like id, class, tag name, or more complex selectors.</p>
-                </div>
-              </div>
-              <div class="collapse collapse-plus bg-base-200">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
-                <div class="collapse-content">
-                  <p>Event delegation is a technique in the context of the DOM where you leverage the concept of event bubbling to manage events more efficiently. Instead of attaching event listeners to individual child elements, you attach a single event listener to a parent element.</p>
-                </div>
-              </div>
-              <div class="collapse collapse-plus bg-base-200">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-                <div class="collapse-content">
-                  <p>
-                    To manipulate an element's attributes and styles using the DOM, JavaScript provides several methods and properties. Here's a breakdown of how you can achieve both:</p>
-                </div>
-              </div>
-        </div>
-        </section>
-
         <!-- history -->
          <div id="donate-history" class="history hidden text-center mb-14">
              <h1 class="font-bold text-4xl text-center py-5">Donate History</h1>
@@ -161,7 +119,20 @@
          </div>
     </main>
     <footer>
-
+        <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_1" class="modal">
+    <div class="modal-box text-center flex flex-col gap-6">
+        <h3 class="text-3xl font-bold text-center">Congrates!</h3>
+        <img class="h-8 w-8 mx-auto mt-4" src="/image/coin.png" alt="">
+        <p class="py-0 font-semibold">You Have Donaed for Humankind</p>
+        <p class="font-bold text-2xl">Successfully</p>
+        <div class="modal-action">
+        <form method="dialog">
+                <button class="btn text-center mr-40 font-bold">Close confrimation</button>
+        </form>
+        </div>
+    </div>
+    </dialog>
     </footer>
     <!-- adding js file -->
      <script src="js/utilities.js"></script>
