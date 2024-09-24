@@ -27,12 +27,12 @@ function getSectionById(id){
 // donation history
 function donationHistory (currentValue, paragraph){
     const p = document.createElement('p')
-        p.innerHTML = `<p class= "text-3xl font-bold my-4">${currentValue} ${paragraph} </p>`
+        p.innerHTML = `<p class= "text-3xl font-bold my-4 bg-[#bbf570]">${currentValue} ${paragraph} </p>`
         document.getElementById('history').appendChild(p)
         
         // history date
         const para = document.createElement('p')
         const d = new Date()
-        para.innerHTML = `<p class ="text-2xl font-bold mb-10">${d}</p>`
+        para.innerHTML = `<p class ="text-xl font-bold mb-10">${d}</p>`
         document.getElementById('history').appendChild(para)
 }
